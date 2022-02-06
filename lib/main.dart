@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+const title = 'My App';
+
 void main() => runApp(
       MaterialApp(
-        title: 'My Demo',
+        title: title,
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -22,7 +24,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Demo'),
+        title: Text(title),
       ),
       body: Center(
         child: Column(
