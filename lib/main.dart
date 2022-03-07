@@ -5,9 +5,7 @@ const title = 'My App';
 void main() => runApp(
       MaterialApp(
         title: title,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+        theme: ThemeData(primarySwatch: Colors.blue),
         home: const Home(),
       ),
     );
@@ -23,9 +21,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
+      appBar: AppBar(title: Text(title)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -37,3 +33,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
